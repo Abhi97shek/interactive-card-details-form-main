@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+.main-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-container
+{
+   padding-top: 1rem;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../public/assets/bg-main-desktop.png');
+}
+.card-front
+{
+    padding: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../public/assets/bg-card-front.png');
+}
+.card-back
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../public/assets/bg-card-back.png');
+}
+.cardNumber
+{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .3rem;
+    margin-top: 5rem;
+}
+.name-expire-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 1.5rem;
+}
+.customer-name
+{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 12px;
+    font-weight: normal;
+}
+.expiry-date
+{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 12px;
+    font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-container
+{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userCardDetailsForm
+{
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+}
+.cardHolderName-section
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;  
+    margin-bottom: 1rem;
+}
+.cardHolder-name
+{
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+.cardHolder-inputBox
+{
+        height: 2rem;
+        border-radius: 5px;
+        border: 1px solid hsl(270, 3%, 87%);
+        padding: 0rem .8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardHoldercardNumber-section
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;  
+    margin-bottom: 1rem;
+}
+.cardHoldercardNumber-name
+{
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+.cardHoldercardNumber-inputBox
+{
+        height: 2rem;
+        border-radius: 5px;
+        border: 1px solid hsl(270, 3%, 87%);
+        padding: 0rem .8rem;
+}
+.cardHoldercardNumber-inputBox:focus
+{   
+    
+    border: 1px solid hsl(249, 99%, 64%);
+}
+::placeholder
+{
+    color: hsl(270, 3%, 87%);
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+    
+    width: 100%;
+    height: 2.5rem;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardHolderdate-section
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;  
+    margin-bottom: 1rem;
+}
+.cardHolderdate
+{
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+.cardHolderdateMonth-inputBox
+{
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0rem .8rem;
+    width: 2.2rem;
+}
+.cardHolderdateYear-inputBox
+{
+    margin-left: .5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0rem .8rem;
+    width: 2.2rem;
+}
+.inputFieldsDate
+{
+    display: flex;
+}
+.cardHolderCVC-section
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;  
+    margin-bottom: 1rem;
+}
+.cardHolderCVC-name
+{
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+.cardHolderCVC-inputBox
+{
+    width: 9rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0rem .8rem;
+    
+}
+.reminaingCardDetails
+{
+    display: flex;
+    align-items: center;
 }
